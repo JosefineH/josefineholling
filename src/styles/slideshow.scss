@@ -1,0 +1,74 @@
+.slide-section {
+    width: 100vw;
+    height: auto;
+    display: flex; 
+    overflow: hidden;
+    justify-content: center;
+  }
+
+.slide-container {
+    width: 500px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 3rem;
+      line-height: 20px;
+      @include media(">=phone", "<lgphone") {
+        font-size: 2.5rem;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 16px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 16px;
+      }
+    }
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+        @include media(">=phone", "<lgphone") {
+          font-size: 14px;
+        }
+        @include media(">=lgphone", "<tablet") {
+          font-size: 16px;
+        }
+        @include media(">=tablet", "<desktop") {
+          font-size: 16px;
+        }
+      }
+  
+    .slide-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 50px;
+      grid-gap: 20px;
+      @include media(">=phone", "<lgphone") {
+        grid-template-columns: 1fr;
+      }
+      @include media(">=lgphone", "<tablet") {
+        grid-template-columns: 1fr;
+      }
+      @include media(">=tablet", "<desktop") {
+        grid-template-columns: 1fr 1fr;
+      }
+      .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+          height: 3rem;
+        }
+        p {
+          font-size: 14px;
+        }
+        a {
+          //text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+
+  

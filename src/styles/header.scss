@@ -1,0 +1,102 @@
+.header-section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-wrapper {
+    width: 80vw;
+    //height: 100%;
+    //margin-top: 10vh;
+    //margin-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    h2 {
+      font-size: 1rem;
+      text-align: center;
+      @include media(">=phone", "<lgphone") {
+        font-size: 14px;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 16px;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 16px;
+      }
+    }
+  
+    .heading-wrapper {
+      width: 70%;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      .left-col {
+        width: 50%;
+        align-items: left;
+        h1 {
+          font-size: 4rem;
+          text-align: right;
+          line-height: 50px;
+          @include media(">=phone", "<lgphone") {
+            font-size: 1.5rem;
+            line-height: 10px;
+          }
+          @include media(">=lgphone", "<tablet") {
+            font-size: 1.5rem;
+            line-height: 10px;
+          }
+          @include media(">=tablet", "<desktop") {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      .right-col {
+        width: 50%;
+        align-items: right;
+        h1 {
+          font-size: 4rem;
+          text-align: right;
+          line-height: 50px;
+          @include media(">=phone", "<lgphone") {
+            font-size: 1.5rem;
+            line-height: 10px;
+          }
+          @include media(">=lgphone", "<tablet") {
+            font-size: 1.5rem;
+            line-height: 10px;
+          }
+          @include media(">=tablet", "<desktop") {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }  
+    p {
+      width: 50%;
+      text-align: center;
+      overflow: hidden;
+      @include media(">=phone", "<lgphone") {
+        font-size: 12px;
+        width: 100%;
+      }
+      @include media(">=lgphone", "<tablet") {
+        font-size: 12px;
+        width: 100%;
+      }
+      @include media(">=tablet", "<desktop") {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+  
